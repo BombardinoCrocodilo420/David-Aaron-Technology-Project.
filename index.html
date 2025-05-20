@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Enhanced Web Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#learning">Learning</a>
+    <a href="#tools">Tools</a>
+    <a href="#support">Support</a>
+    <a href="#newsletter">Newsletter</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h1>Welcome to my HTML project!</h1>
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="Profile Image">
+    <p>Hello! My name is David. I am 18 years old and from Barranquilla, Colombia.</p>
+  </section>
+
+  <!-- Learning -->
+  <section id="learning">
+    <h2>What I'm Learning</h2>
+    <p>I'm learning the fundamentals of web development structure, design, and logic.</p>
+  </section>
+
+  <!-- Interactive Tools -->
+  <section id="tools">
+    <!-- Same tools section as before -->
+    <!-- ... -->
+    <button onclick="document.getElementById('support').scrollIntoView({ behavior: 'smooth' });">
+      Go to Support Links
+    </button>
+  </section>
+
+  <!-- Support Links -->
+  <section id="support">
+    <h2>Support Me</h2>
+    <div class="links">
+      <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+      <a href="https://patreon.com" target="_blank">🎁 Patreon</a>
+      <a href="https://cash.app" target="_blank">💸 CashApp</a>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section id="newsletter">
+    <h2>Join the Newsletter</h2>
+    <p>Stay updated with new projects, updates, and resources.</p>
+    <input type="email" id="newsletterEmail" placeholder="Enter your email">
+    <button onclick="subscribeNewsletter()">Subscribe</button>
+    <p id="newsletterMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
